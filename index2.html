@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Music Player</title>
+        <script src="https://kit.fontawesome.com/12a41c30dd.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style2.css">
+    </head>
+    <body>
+
+        <!-- Header Section  -->
+
+        <header class="nav-bar">
+                <div class="title-combo">
+                    <div class="logo">
+                        <img src="/logo.png" alt="logo">
+                    </div>
+    
+                    <div class="web-name text-hover">
+                        <h2>Music</h2>
+                        <h5>Player</h5>
+                    </div>
+                </div>
+
+                <div class="fav">
+                    <a href="#">
+                        <h3 class="text-hover">Favourites</h3>
+                    </a>
+                </div>
+
+                <div class="search-box">
+                    <form action="">
+                        <button id="search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input type="text" placeholder="Search.." name="search" id="search">
+                        <button id="mic" type="submit"><i class="fas fa-microphone"></i></button>
+                    </form>
+                </div>
+
+                <div class="">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+
+                <div class="">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            
+        </header>
+
+        <!-- Main Section -->
+
+        <main>
+            <aside class="aside section-1">
+                <!-- Banner Section -->
+                <section class="container">
+                    <div class="box">
+                        <img src="/Vaathi Coming.jpg" alt="Banner-1">
+                    </div>
+                    <div class="box" style="z-index: 1;">
+                        <img src="/Buttabomma.jpg" alt="Banner-3">
+                    </div>
+                    <div class="box">
+                        <img src="/Bekhayali.jpg" alt="Banner-2">
+                    </div>
+                </section>
+
+                <!-- Latest Releases -->
+                <section class="latest-releases">
+                    <h1 class="heading-text">Latest Releases</h1>
+
+                    <div class="card">
+                        <figure>
+                            <a href="playlistscreen.html">
+                                <img src="/Kesariya.jpg" alt="">
+                            </a>
+                            
+                           <figcaption class="song-info">
+                                <h2>Kesariya</h2>
+                                <p>Feb 14,2022</p>
+                           </figcaption>
+                        </figure>
+
+                        <div class="options">
+                            <input type="checkbox" id="toggle-btn" hidden>
+                            <label><i class="fa-solid fa-ellipsis"></i></label>
+                            <!-- <div class="opt-nav">
+                                <a href="#">Play Now</a>
+                                <a href="#">Add to Queue</a>
+                                <a href="#">Add to Playlist</a>
+                                <a href="#">Get Info</a>
+                            </div> -->
+                            <p>4:28</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <figure>
+                            <a href="playlistscreen.html">
+                                <img src="/Inthandam.jpg" alt=""> 
+                            </a>
+                            <figcaption class="song-info">
+                                <h2>Inthandam</h2>
+                                <p>June 15, 2022</p>
+                            </figcaption>
+                         </figure>
+                        <div class="options">
+                            <input type="checkbox" name="" id="" hidden>
+                            <label><i class="fa-solid fa-ellipsis"></i></label>
+                            <p>3:38</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <figure>
+                            <a href="playlistscreen.html">
+                               <img src="/Vikram.jpg" alt="">  
+                            </a>
+                            
+                            <figcaption class="song-info">
+                                <h2>Vikram</h2>
+                                <p>January 22,2022</p>
+                            </figcaption>
+                         </figure>
+                        <div class="options">
+                            <input type="checkbox" name="" id="" hidden>
+                            <label><i class="fa-solid fa-ellipsis"></i></label>
+                            <p>3:38</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <figure>
+                            <a href="playlistscreen.html">
+                                <img src="/Darshana.jpg" alt=""> 
+                            </a>
+                            
+                            <figcaption class="song-info">
+                                <h2>Darshana</h2>
+                                <p>DEC 6, 2021</p>
+                            </figcaption>
+                         </figure>
+                        <div class="options">
+                            <input type="checkbox" name="" id="" hidden>
+                            <label><i class="fa-solid fa-ellipsis"></i></label>
+                            <p>3:45</p>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Popular Artists -->
+
+                <section class="popular-artists">
+                    <h1 class="heading-text">Popular Artists</h1>
+                    <div class="popular-artist-content">
+                        <figure>
+                            <a href="playlistscreen.html">
+                                <img src="/Arijit Singh.jpg" alt="">
+                                <figcaption>Arijit Singh</figcaption>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="playlistscreen.html">
+                                <img src="/Anirudh.jpg" alt="">
+                                <figcaption>Anirudh Ravichander</figcaption>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="playlistscreen.html">
+                                <img src="/Thaman.jpg" alt="">
+                                <figcaption>S.S Thaman</figcaption>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="playlistscreen.html">
+                                <img src="/Hesham Abdul Wahab.jpg" alt="">
+                                <figcaption>Hesham Abdul Wahab</figcaption>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="playlistscreen.html">
+                                <img src="/Ajaneesh Loknath.jpg" alt="">
+                                <figcaption>B Ajaneesh Loknath</figcaption>
+                            </a>
+                        </figure>
+
+                        
+                    </div>
+
+                </section>
+
+                 <!-- Music Station -->
+
+                 <section class="music-station">
+                     <figure id="mus-sta-fig">
+                         <img src="/Music Station.jpg">
+                     </figure>
+                     <div class="music-mood">
+                        <figure><a href=""><img src="/love.jpg" alt=""><p>Love</p></a></figure>
+                        <figure><a href=""><img src="/retro.jpg" alt=""><p>Retro</p></a></figure>
+                        <figure><a href=""><img src="/chill.jpg" alt=""><p>Chill</p></a></figure>
+                        <figure><a href=""><img src="/workout.jpg" alt=""><p>Workout</p></a></figure>
+                        <figure><a href=""><img src="/rock.jpg" alt=""><p>Rock</p></a></figure>
+                        <figure><a href=""><img src="/pop.jpg" alt=""><p>Pop</p></a></figure>
+                     </div>
+                 </section>
+
+                 <!-- Big Music Station -->
+
+                 <section class="b-music-station">
+                    <figure>
+                        <a href="">
+                           <img src="/Party.jpg">
+                           <p>Party</p> 
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="">
+                            <img src="/electronics.jpg">
+                            <p>Electronic</p>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="">
+                           <img src="/road trip.jpg">
+                           <p>Rode Trip</p> 
+                        </a>
+                        
+                    </figure>
+                </section>
+
+                <!-- Latest English -->
+
+                <section class="latest-songs" id="latest-english">
+                    <h1 class="heading-text">Latest English</h1>
+                    <div class="latest-song-div">
+                        <figure>
+                            <a href="">
+                                <img src="/Dandelions.jpg" alt="">
+                                <figcaption class="">
+                                    <h5>Dandelions</h5>
+                                    <h6>AUG 23, 2017</h6>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <img src="/Perfect.jpg" alt="">
+                                <figcaption class="">
+                                    <h5>Perfect</h5>
+                                    <h6>Feb 2, 2017</h6>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <img src="/we don't talk anymore.jpg" alt="">
+                                <figcaption class="">
+                                    <h5>We Don't Talk Anymore</h5>
+                                    <h6>Jul 19, 2016</h6>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <img src="/Starboy.jpg" alt="">
+                                <figcaption class="">
+                                    <h5>Starboy</h5>
+                                    <h6>Sept 28,2016</h6>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <img src="/Middle of the night.jpg" alt="">
+                                <figcaption class="">
+                                    <h5>Middle Of The Night</h5>
+                                    <h6>Mar 18 2022</h6>
+                                </figcaption>
+                            </a>
+                        </figure>
+
+                        
+                    </div>
+
+                </section>
+
+                <!-- Latest Hindi -->
+
+                <section class="latest-songs" id="latest-hindi">
+                    <h1 class="heading-text">Latest Hindi</h1>
+                    <div class="latest-song-div">
+                        <figure>
+                            <a href="">
+                                <img src="/Jai Shri Ram.jpg" alt="">
+                                <figcaption class="">
+                                    <h5>Jai Shri Ram</h5>
+                                    <h6>Apr 6, 2023</h6>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <img src="/RamSitaRam.jpg" alt="">
+                                <figcaption class="">
+                                    <h5>Ram Siya Ram</h5>
+                                    <h6>May 30, 2023</h6>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <img src="/Shivoham.jpg" alt="">
+                                <figcaption class="">
+                                    <h5>Shivoham</h5>
+                                    <h6>May 30, 2023</h6>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <img src="/Tere Pyaar Main.jpg" alt="">
+                                <figcaption class="">
+                                    <h5>Tere Pyaar Mein</h5>
+                                    <h6>Feb 14, 2023</h6>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <img src="/tere vaaste.jpg" alt="">
+                                <figcaption class="">
+                                    <h5>Tere Vaaste</h5>
+                                    <h6>Jun 12, 2023</h6>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                </section>
+            </aside>
+
+            <!-- PlayList side bar -->
+
+            <aside class="aside section-2">
+               <h1 class="heading-text inline">Playlist</h1>
+               <h3 class="inline right">Queue</h3>
+
+               <div class="playlist">
+                   <div class="playlist-item">
+                        <div class="playlist-content">
+                            <div class="content-left">
+                                <div style="margin-right: 4px;"><h2>01</h2></div>
+                                <div class="coverer">
+                                    <img class="small-img inline-block" src="/Dandelions.jpg" alt=""> 
+                                </div>
+                                <div>
+                                    <div>Dandelions</div>
+                                    <p>Ruth</p>
+                                </div> 
+                            </div>
+                            
+                            <div class="content-right">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                   </div>
+
+                   <div class="playlist-item">
+                        <div class="playlist-content">
+                            <div class="content-left">
+                                <div style="margin-right: 4px;"><h2>02</h2></div>
+                                <div class="coverer">
+                                    <img class="small-img inline-block" src="/Perfect.jpg" alt=""> 
+                                </div>
+                                <div>
+                                    <div>Perfect</div>
+                                    <p>Ed Sheeran</p>
+                                </div> 
+                            </div>
+                            
+                            <div class="content-right">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                   </div>
+
+                   <div class="playlist-item">
+                        <div class="playlist-content">
+                            <div class="content-left">
+                                <div style="margin-right: 4px;"><h2>03</h2></div>
+                                <div class="coverer">
+                                    <img class="small-img inline-block" src="/Blinding Lights.jpg" alt=""> 
+                                </div>
+                                <div>
+                                    <div>Blinding Lights</div>
+                                    <p>The Weeknd</p>
+                                </div> 
+                            </div>
+                            
+                            <div class="content-right">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                   </div>
+
+                   <div class="playlist-item">
+                        <div class="playlist-content">
+                            <div class="content-left">
+                                <div style="margin-right: 4px;"><h2>04</h2></div>
+                                <div class="coverer">
+                                    <img class="small-img inline-block" src="/Starboy.jpg" alt=""> 
+                                </div>
+                                <div>
+                                    <div>Starboy</div>
+                                    <p>The Weeknd</p>
+                                </div> 
+                            </div>
+                            
+                            <div class="content-right">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                   </div>
+
+                   <div class="playlist-item">
+                        <div class="playlist-content">
+                            <div class="content-left">
+                                <div style="margin-right: 4px;"><h2>05</h2></div>
+                                <div class="coverer">
+                                    <img class="small-img inline-block" src="/Animals.png" alt=""> 
+                                </div>
+                                <div>
+                                    <div>Animals</div>
+                                    <p>Maroon 5</p>
+                                </div> 
+                            </div>
+                            
+                            <div class="content-right">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                   </div>
+
+                   <div class="playlist-item">
+                        <div class="playlist-content">
+                            <div class="content-left">
+                                <div style="margin-right: 4px;"><h2>06</h2></div>
+                                <div class="coverer">
+                                    <img class="small-img inline-block" src="/tere vaaste.jpg" alt=""> 
+                                </div>
+                                <div>
+                                    <div>Tere Vaaste</div>
+                                    <p>Varun Jain</p>
+                                </div> 
+                            </div>
+                            
+                            <div class="content-right">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                   </div>
+
+                   <div class="playlist-item">
+                        <div class="playlist-content">
+                            <div class="content-left">
+                                <div style="margin-right: 4px;"><h2>07</h2></div>
+                                <div class="coverer">
+                                    <img class="small-img inline-block" src="/Jai Shri Ram.jpg" alt=""> 
+                                </div>
+                                <div>
+                                    <div>Jai Shri Ram</div>
+                                    <p>Ajay-Atul</p>
+                                </div> 
+                            </div>
+                            
+                            <div class="content-right">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                   </div>
+
+                   <div class="playlist-item">
+                        <div class="playlist-content">
+                            <div class="content-left">
+                                <div style="margin-right: 4px;"><h2>08</h2></div>
+                                <div class="coverer">
+                                    <img class="small-img inline-block" src="/RamSitaRam.jpg" alt=""> 
+                                </div>
+                                <div>
+                                    <div>Ram Siya Ram</div>
+                                    <p>Ajay-Atul</p>
+                                </div> 
+                            </div>
+                            
+                            <div class="content-right">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                   </div>
+
+                   <div class="playlist-item">
+                        <div class="playlist-content">
+                            <div class="content-left">
+                                <div style="margin-right: 4px;"><h2>09</h2></div>
+                                <div class="coverer">
+                                    <img class="small-img inline-block" src="/Shivoham.jpg" alt=""> 
+                                </div>
+                                <div>
+                                    <div>Shivoham</div>
+                                    <p>Ajay Gogavale</p>
+                                </div> 
+                            </div>
+                            
+                            <div class="content-right">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                   </div>
+
+                   <div class="playlist-item">
+                        <div class="playlist-content">
+                            <div class="content-left">
+                                <div style="margin-right: 4px;"><h2>10</h2></div>
+                                <div class="coverer">
+                                    <img class="small-img inline-block" src="/Tere Pyaar Main.jpg" alt=""> 
+                                </div>
+                                <div>
+                                    <div>Tere Pyaar Mein</div>
+                                    <p>Arjit Singh</p>
+                                </div> 
+                            </div>
+                            
+                            <div class="content-right">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                   </div>
+
+               </div>
+            </aside>
+        </main>
+        
+        <!-- Footer:- Music Palyer Controls  -->
+
+        <footer>
+            <div class="play-song-info trans-bg">
+                <div class="con-left trans-bg">
+                    <div class="footer-img">
+                        <img class="small-img inline-block" src="/Jai Shri Ram.jpg" alt=""> 
+                    </div>
+                    <div class="trans-bg">
+                        <div class="font-mid trans-bg">Jai Shri Ram</div>
+                        <p class="trans-bg">Ajay-Atul</p>
+                    </div> 
+                </div>    
+                <div class="con-right trans-bg side-margin-4px">
+                    <i class="fa-solid fa-ban"></i>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="player trans-bg"">
+                <div class="player-contorls trans-bg">
+                    <div><i class="fa-solid fa-shuffle"></i></div>
+                    <div><i class="fa-solid fa-backward-step"></i></div>
+                    <div><i class="fa-solid fa-play"></i></div>
+                    <div><i class="fa-solid fa-forward-step"></i></div>
+                    <div><i class="fa-solid fa-arrow-rotate-left"></i></div>
+                </div>
+                <div class="slider">
+                    <div class="time">0:00</div>
+                    <div class="slide-ctr">
+                        <input type="range" min="0" max="100" value="0" class="slider" id="myrange">
+                    </div>
+                    <div class="time">5:00</div>
+                </div>
+            </div>
+            <div class="extras trans-bg">
+                <div><i class="fa-solid fa-list"></i></div>
+                <div><i class="fa-solid fa-laptop"></i></div>
+                <div><i class="fa-solid fa-volume-high"></i></div>
+                <div></div>
+                <div><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </div>
+        </footer>
+
+    </body>
+</html>
